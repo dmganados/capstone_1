@@ -4,29 +4,10 @@
 	box-sizing: border-box;
 }
 
-main {
-	display: grid;
-	grid-template-columns: 12, 1fr;
-	grid-template-rows: 100px 1fr;
-}
-
-#logo_img {
-	margin-top: -20px;
-}
-
-#banner_img {
-	position: absolute;
-	z-index: 1;
-	margin-top: -25px;
-	opacity: 0.8;
-}
-
-
-.nav-item {
-	background-color: #04724D;
-	width: 200px;
-	text-align: center;
-
+@media only screen and (max-width:  600px) {
+.logoImg {
+	width: 40% !important;
+	height: 10% !important;
 }
 
 #navbarNav a:hover {
@@ -34,41 +15,224 @@ main {
 	color: #F4F4F9;
 }
 
-#banner_message {
-	position: relative;
-	z-index: 2;
+.nav-item {
+	background-color: #04724D;
+	width: 100%;
+	text-align: center;
+}
+
+.homeContent {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#banner_img {
+	position: absolute;
+	z-index: -1;
+	margin-top: 0px;
+	opacity: 0.8;	
+}
+
+.bannerTxt {
+	text-align: center;
 	font: 'Source Sans Pro', sans-serif;
 	font-size: 35px;
-	color: #000000;
-	margin-top: 165px;
+	color: #000000;	
+/*	margin-left: 0px;
+	margin-right: 0px;*/
+	display: inline;
+	/*margin-top: 20%;*/
+}
 
-	
+#banner_message {
+	grid-column: 1/4;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#banner_message2 {
+	font: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	margin-top: 8%;
+	grid-column: 1/4;
+}
+
+.homeButton {
+	grid-column: 1/4;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
 }
 
 #button_banner {
+	background-color: #04724D;
+	color: #F4F4F9;
+	padding: 10px;
+	border-radius: 50px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#button_banner:hover {
+	background-color: #000000;
+}
+}
+
+@media only screen and (min-width:  600px) {
+.logoImg {
+	width: 20% !important;
+}
+
+#navbarNav a:hover {
+	background-color: #000000;
+	color: #F4F4F9;
+}
+
+.nav-item {
+	background-color: #04724D;
+	width: 100%;
+	text-align: center;
+}
+
+.homeContent {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#banner_img {
 	position: absolute;
-	z-index: 2;
+	z-index: -1;
+	margin-top: 0px;
+	opacity: 0.8;	
+}
+
+.bannerTxt {
+	text-align: center;
+	font: 'Source Sans Pro', sans-serif;
+	font-size: 35px;
+	color: #000000;	
+	display: inline;
+}
+
+#banner_message {
+	grid-column: 1/4;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#banner_message2 {
+	font: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	color: #000000;
+	text-align: center;
+	margin-top: 8%;
+	grid-column: 1/4;
+}
+
+.homeButton {
+	grid-column: 1/4;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+}
+
+#button_banner {
+	background-color: #04724D;
+	color: #F4F4F9;
+	padding: 10px;
+	border-radius: 50px;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#button_banner:hover {
+	background-color: #000000;
+}
+}
+
+@media only screen and (min-width:  992px) {
+.logoImg {
+	margin-top: -20px;
+	width: 50%;
+	/*height: 150px;*/
+}
+
+.nav-item {
+	background-color: #04724D;
+	width: 200px;
+	text-align: center;
+}
+
+#navbarNav a:hover {
+	background-color: #000000;
+	color: #F4F4F9 !important;
+}
+
+.homeContent {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	/*grid-template-rows: 100px 1fr;*/
+}
+
+#banner_img {
+	position: absolute;
+	z-index: -1;
+	margin-top: 0px;
+	opacity: 0.8;
+}
+
+.bannerTxt {	
+	text-align: center;
+	font: 'Source Sans Pro', sans-serif;
+	font-size: 65px;
+	color: #000000;
+}
+
+#banner_message {
+	grid-column: 1/6;
+	margin-top: 20%;
+	margin-left: 40%;	
+}
+
+#banner_message2 {
+	font: 'Source Sans Pro', sans-serif;
+	font-size: 35px;
+	color: #000000;
+	text-align: center;
+	grid-column: 1/8;
+	margin-top: 5%;
+}
+
+#button_banner {
 	background-color: #04724D;
 	color: #F4F4F9;
 	width: 200px;
 	padding: 20px;
 	border-radius: 50px;
 	border: none;
-	margin-top: 25px;
+	text-align: center;
+}
+
+.homeButton {
+	grid-column: 3/4;
+	margin-top: 50%;
+	margin-left: 50%;
 }
 
 #button_banner:hover {
 	background-color: #000000;
 }
-
-#banner_message2 {
-	position: relative;
-	z-index: 2;
-	font: 'Source Sans Pro', sans-serif;
-	font-size: 35px;
-	color: #000000;
-
-	text-align: center;
 }
+
+
+
 
 
