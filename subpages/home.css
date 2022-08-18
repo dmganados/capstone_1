@@ -161,8 +161,8 @@
 @media only screen and (min-width:  992px) {
 .logoImg {
 	margin-top: -20px;
-	width: 50%;
-	/*height: 150px;*/
+	width: 200px !important;
+	height: 200px !important;	
 }
 
 .nav-item {
@@ -179,13 +179,12 @@
 .homeContent {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	/*grid-template-rows: 100px 1fr;*/
 }
 
 #banner_img {
 	position: absolute;
 	z-index: -1;
-	margin-top: 0px;
+	margin-top: 0px !important;
 	opacity: 0.8;
 }
 

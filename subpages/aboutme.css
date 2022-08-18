@@ -4,8 +4,49 @@
 	box-sizing: border-box;
 }
 
-nav > div > div > a {
+@media only screen and (max-width:  600px) {
+.logoImg {
+	width: 40% !important;
+	height: 10% !important;
+}
+
+#navbarNav a:hover {
+	background-color: #000000;
+	color: #F4F4F9;
+}
+
+.nav-item {
 	background-color: #04724D;
+	width: 100%;
+	text-align: center;
+}
+
+main {
+	position: absolute;
+	z-index: 1;
+	background-color: #B8DBD9;
+	height: auto;
+}
+
+}
+
+@media only screen and (min-width:  992px) {
+.logoImg {
+	margin-top: -20px;
+	width: 200px !important;
+	height: 200px !important;
+	
+}
+
+.nav-item {
+	background-color: #04724D;
+	width: 200px;
+	text-align: center;
+}
+
+#navbarNav a:hover {
+	background-color: #000000;
+	color: #F4F4F9 !important;
 }
 
 main {
@@ -16,20 +57,37 @@ main {
 	height: auto;
 }
 
-#logo_img {
-	margin-top: -20px;
+.aboutmeContent {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
 }
 
-.nav-item {
-	background-color: #04724D;
+.mypicContainer {
+	grid-column: 4/4;
+	grid-row: 1/1;
+}
+
+.myPic {	
 	width: 200px;
-	text-align: center;
-
+	height: 200px;
 }
 
-#navbarNav a:hover {
-	background-color: #000000;
-	color: #F4F4F9;
+.introduction {
+	grid-column: 2/7;
+}
+
+.professional {
+	grid-column: 2/2;
+	grid-row: 3/ span 1;
+}
+
+.picProfessional {
+	width: 50px;
+	height: 50px;
+}
+
+.profInfo {
+	grid-column: 2/7;
 }
 
 #prof_present {
@@ -52,3 +110,6 @@ main {
 #skills {
 	margin-left: 50px;
 }
+}
+
+
