@@ -52,9 +52,11 @@ main {
 
 .text-center {
 	font-size: 90%;
-	text-align: center !important;
-	margin-left: 3%;
-	margin-right: 3%;
+	text-align: center;
+	padding-left: 3%;
+	padding-right: 3%;
+/*	margin-left: 3%;
+	margin-right: 3%;*/
 }
 
 .professional {
@@ -84,6 +86,8 @@ main {
 	margin-left: 7%;
 	margin-top: 3%;
 	font-size: 85%;
+	padding-right: 5%;
+	text-align: justify;
 }
 
 #prof_previous {
@@ -95,6 +99,8 @@ main {
 	margin-left: 7%;
 	margin-top: 3%;
 	font-size: 85%;
+	text-align: justify;
+	padding-right: 5%;
 }
 
 .education {
@@ -173,12 +179,176 @@ main {
 }
 }
 
+@media only screen and (min-width:  600px) {
+.logoImg {
+	margin-top: -20px;
+	width: 200px !important;
+	height: 200px !important;	
+}
+
+.nav-item {
+	background-color: #04724D;
+	width: 100%;
+	text-align: center;
+}
+
+#navbarNav a:hover {
+	background-color: #000000;
+	color: #F4F4F9 !important;
+}
+
+main {
+	position: absolute;
+	z-index: 1;
+	margin-top: -25px;
+	background-color: #B8DBD9;
+	height: auto;
+}
+
+.aboutmeContent {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.mypicContainer {
+	grid-column: 3/3;
+	grid-row: 1 / span 1;
+	margin-top: 10%;
+	padding-bottom: 10%;
+}
+
+.myPic {	
+	width: 200px;
+	height: 200px;
+}
+
+.introduction {
+	grid-column: 1/6;
+	padding-bottom: 8%;
+}
+
+.text-center {
+	text-align: justify !important;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.professional {
+	grid-column: 1/1;
+	grid-row: 3/ span 1;
+	margin-left: 10%;
+}
+
+.picProfessional {
+	width: 40px;
+	height: 40px;
+}
+
+.profInfo {
+	grid-column: 1/6;
+	padding-bottom: 5%;
+	padding-left: 3%;
+}
+
+#prof_present {
+	margin-left: 50px;
+	margin-top: -3%;
+}
+
+.presentInfo {
+	margin-left: 30%;
+	margin-top: -4%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	text-align: justify;
+}
+
+#prof_previous {
+	margin-left: 50px;
+}
+
+.previousInfo {
+	margin-left: 30%;
+	margin-top: -4%;
+	text-align: justify;
+	padding-right: 5%;
+}
+
+.education {
+	grid-column: 1/1;
+	grid-row: 5 / span 1;	
+	margin-left: 10%;
+}
+
+.educPic {
+	width: 30px;
+	height: 30px;	
+}
+
+#educ_present {
+	margin-left: 50px;
+}
+
+.educInfo {
+	grid-column: 1/5;
+	margin-top: -3%;
+	padding-bottom: 5%;
+	padding-left: 3%;
+}
+
+.schoolPresent {
+	margin-left: 37%;
+	margin-top: -5%;
+}
+
+.coursePresent {
+	margin-left: 37%;
+}
+
+#educ_previous {
+	margin-left: 50px;
+}
+
+.schoolPrev {
+	margin-left: 37%;
+	margin-top: -4%;
+}
+
+.coursePrev {
+	margin-left: 37%;
+}
+
+.skillDiv {
+	grid-column: 1/1;
+	margin-left: 10%;
+}
+
+.skillIcon {
+	width: 30px;
+	height: 30px;
+}
+
+.skillInfo {
+	grid-column: 1/5;
+	padding-left: 3%;
+}
+
+#skills {
+	margin-left: 50px;
+	margin-top: -3%;
+}
+
+.skillSet {
+	margin-left: 40%;
+	margin-top: -4%;
+}
+}
+
 @media only screen and (min-width:  992px) {
 .logoImg {
 	margin-top: -20px;
 	width: 200px !important;
-	height: 200px !important;
-	
+	height: 200px !important;	
 }
 
 .nav-item {
@@ -218,7 +388,7 @@ main {
 }
 
 .introduction {
-	grid-column: 2/7;
+	grid-column: 1/8;
 	padding-bottom: 8%;
 }
 
@@ -234,17 +404,15 @@ main {
 
 .profInfo {
 	grid-column: 2/7;
-	padding-bottom: 5%;
 	padding-left: 3%;
 }
 
 #prof_present {
 	margin-left: 50px;
-	margin-top: -3%;
 }
 
 .presentInfo {
-	margin-left: 20%;
+	margin-left: 25%;
 	margin-top: -3%;
 }
 
@@ -253,7 +421,7 @@ main {
 }
 
 .previousInfo {
-	margin-left: 20%;
+	margin-left: 25%;
 	margin-top: -3%;
 }
 
@@ -279,12 +447,12 @@ main {
 }
 
 .schoolPresent {
-	margin-left: 20%;
+	margin-left: 25%;
 	margin-top: -3%;
 }
 
 .coursePresent {
-	margin-left: 20%;
+	margin-left: 25%;
 }
 
 #educ_previous {
@@ -292,12 +460,12 @@ main {
 }
 
 .schoolPrev {
-	margin-left: 20%;
+	margin-left: 25%;
 	margin-top: -3%;
 }
 
 .coursePrev {
-	margin-left: 20%;
+	margin-left: 25%;
 }
 
 .skillDiv {
@@ -320,7 +488,7 @@ main {
 }
 
 .skillSet {
-	margin-left: 22%;
+	margin-left: 27%;
 	margin-top: -3%;
 }
 }
