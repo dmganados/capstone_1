@@ -5,9 +5,13 @@
 }
 
 @media only screen and (max-width:  600px) {
+.imgLink{
+	width: 50%;
+}
+
 .logoImg {
-	width: 40% !important;
-	height: 10% !important;
+	width: 100% !important;
+	margin-top: -20%;
 }
 
 #navbarNav a:hover {
@@ -85,7 +89,8 @@
 
 @media only screen and (min-width:  600px) {
 .logoImg {
-	width: 20% !important;
+	width: 50%;
+	margin-top: -10%;
 }
 
 #navbarNav a:hover {
@@ -102,6 +107,7 @@
 .homeContent {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	/*margin-top: -10%;*/
 }
 
 #banner_img {
@@ -166,7 +172,7 @@
 }
 
 .nav-item {
-	background-color: #586F7C;
+	background-color: #04724D;
 	width: 200px;
 	text-align: center;
 }
@@ -191,14 +197,14 @@
 .bannerTxt {	
 	text-align: center;
 	font: 'Source Sans Pro', sans-serif;
-	font-size: 65px;
+	font-size: 55px;
 	color: #000000;
 }
 
 #banner_message {
-	grid-column: 1/6;
-	margin-top: 20%;
-	margin-left: 40%;	
+	grid-column: 1/7;
+	margin-top: 10%;
+	/*margin-left: 40%;	*/
 }
 
 #banner_message2 {

@@ -5,9 +5,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+.imgLink{
+	width: 50%;
+}
+
 #logo_img {
-	width: 40%;
-	height: 10%;	
+	width: 100% !important;
+	margin-top: -20%;
 }
 
 #navbarNav a:hover {
@@ -35,7 +39,8 @@ main {
 
 @media only screen and (min-width: 600px) {
 #logo_img {
-	width: 20% !important;	
+	width: 50%;
+	margin-top: -10%;	
 }
 
 #navbarNav a:hover {
@@ -69,7 +74,7 @@ main {
 }
 
 .nav-item {
-	background-color: #586F7C;
+	background-color: #04724D;
 	width: 200px;
 	text-align: center;
 }
