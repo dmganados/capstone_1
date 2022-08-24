@@ -40,7 +40,7 @@
 .bannerTxt {
 	text-align: center;
 	font: 'Source Sans Pro', sans-serif;
-	font-size: 35px;
+	font-size: 25px;
 	color: #000000;	
 /*	margin-left: 0px;
 	margin-right: 0px;*/
@@ -59,6 +59,7 @@
 #banner_message2 {
 	font: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
+	/*font-weight: bold;*/
 	color: #000000;
 	text-align: center;
 	margin-top: 8%;
@@ -84,6 +85,64 @@
 
 #button_banner:hover {
 	background-color: #000000;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	background-color: #F4F4F9;
+	margin-top: 40vh;
+}
+
+.footerLogo {
+	width: 60%;
+}
+
+.footerNavList {
+	grid-column: 1/3;
+}
+
+.footerNav {
+	list-style-type: none;
+	margin-top: 5%;	
+}
+
+.footerList, .footerList a:hover, .footerList a:link {
+	padding-bottom: 5%;
+	font: 'Source Sans Pro', sans-serif;
+	font-size: 90%;
+	color: #04724D;
+	text-decoration: none;
+	margin-left: 10%;
+}
+
+.footerTxt {
+	color: #000000;
+}
+
+.vl {
+	grid-column: 3/3;
+	height: 100px;
+	border-left: 3px solid #04724D;
+	margin-top: 20%;
+}
+
+.socialMedia {
+	grid-column: 3/5;
+	margin-top: -60%;
+	margin-left: 15%;
+}
+
+.socialMediaIcon {
+	width: 15%;
+	margin-right: 10%;
+}
+
+.copyright {
+	grid-column: 3/5;
+	font-size: 70%;
+	margin-top: -30%;
+	margin-left: 10%;
 }
 }
 
@@ -138,7 +197,7 @@
 	font-size: 20px;
 	color: #000000;
 	text-align: center;
-	margin-top: 8%;
+	margin-top: 10%;
 	grid-column: 1/4;
 }
 
@@ -161,6 +220,62 @@
 
 #button_banner:hover {
 	background-color: #000000;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	background-color: #F4F4F9;
+	margin-top: 30vh;
+}
+
+.footerLogo {
+	width: 60%;
+}
+
+.footerNavList {
+	grid-column: 2/3;
+}
+
+.footerNav {
+	list-style-type: none;
+	margin-top: 5%;
+
+}
+
+.footerList, .footerList a:hover, .footerList a:link {
+	padding-bottom: 5%;
+	font: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	color: #04724D;
+	text-decoration: none;
+}
+
+.footerTxt {
+	color: #000000;
+}
+
+.vl {
+	grid-column: 4/4;
+	height: 100px;
+	border-left: 3px solid #04724D;
+	margin-top: 10%;
+}
+
+.socialMedia {
+	margin-top: 30%;
+}
+
+.socialMediaIcon {
+	width: 20%;
+	margin-right: 10%;
+}
+
+.copyright {
+	grid-column: 5/7;
+	margin-top: -20%;
+	font-size: 12px;
+	margin-left: -3%;
 }
 }
 
@@ -240,11 +355,7 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	background-color: #F4F4F9;
-	margin-top: 30vh;
-}
-
-.footerLogoContainer {
-	grid-column: 1/3;
+	margin-top: 45vh;
 }
 
 .footerLogo {
@@ -269,10 +380,6 @@ footer {
 	text-decoration: none;
 }
 
-/*.footerList a:hover, . {
-	color: #04724D;
-}
-*/
 .footerTxt {
 	color: #000000;
 }
@@ -284,6 +391,22 @@ footer {
 	margin-top: 10%;
 }
 
+.socialMedia {
+	grid-column: 5/7;
+}
+
+.socialMediaIcon {
+	width: 10%;
+	margin-right: 10%;
+	margin-top: -25%;
+}
+
+.copyright {
+	grid-column: 5/7;
+	margin-top: -10%;
+	font-size: 15px;
+	margin-left: 10%;
+}
 }
 
 
