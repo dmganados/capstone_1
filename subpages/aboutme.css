@@ -39,7 +39,7 @@ main {
 
 .myPic {	
 	width: 150px;
-	height: 150px;
+	height: 170px;
 }
 
 .mypicContainer {
@@ -218,8 +218,7 @@ main {
 }
 
 .myPic {	
-	width: 200px;
-	height: 200px;
+	width: 100%;
 }
 
 .introduction {
@@ -360,7 +359,7 @@ footer {
 
 main {
 	position: absolute;
-	z-index: -1;
+	z-index: 1;
 	margin-top: -25px;
 	background-color: #B8DBD9;
 	height: 120%;
@@ -379,8 +378,7 @@ main {
 }
 
 .myPic {	
-	width: 200px;
-	height: 200px;
+	width: 90%;
 }
 
 .introduction {
@@ -437,6 +435,8 @@ main {
 }
 
 footer {
+	position: absolute;
+	z-index: 2;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	background-color: #F4F4F9;

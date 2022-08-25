@@ -27,9 +27,11 @@
 
 main {
 	position: absolute;
-	z-index: 1;
+	z-index: -1;
 	background-color: #B8DBD9;
-	height: 100%;
+	height: 130%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 #coming_soon {
@@ -38,11 +40,11 @@ main {
 
 footer {
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	background-color: #F4F4F9;
-	margin-top: 80vh;
+	margin-top: 130vh;
 }
 
 .footerLogo {
@@ -95,6 +97,78 @@ footer {
 	margin-top: -30%;
 	margin-left: 10%;
 }
+
+.puppypaws {
+	width: 100%;
+}
+
+.ppawsPic {
+	grid-column: 1/5;
+	grid-row: 1 / span 1;
+	margin-top: 10%;
+}
+
+.ppawsTitle, .ppawsTitle a:hover {
+	grid-column: 1/5;
+	grid-row: 1/ span 1;
+	margin-top: 105%;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;	
+	text-decoration: none;
+	color: #04724D;
+}
+
+h4 {
+	font-size: 130%;
+}
+
+span {
+	font-size: 90%;
+}
+
+.ppaws {
+	color: #000000;
+}
+
+.ppawsFramework {
+	grid-column: 1/5;
+	grid-row: 1/ span 1;
+	margin-top: 115%;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bootstrapAct {
+	width: 100%;
+}
+
+.bootstrapAda {
+	grid-column: 1/5;
+	grid-row: 2/ span 1;
+	margin-top: -10%;
+}
+
+.bootstrap, .bootstrap a:hover {
+	grid-row: 2/ span 1;
+	grid-column: 1/5;
+	text-align: center;
+	margin-top: 50%;
+	text-decoration: none;
+	color: #04724D;
+}
+
+.bootstrapTitle {
+	color: #000000;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bootstrapTxt {
+	font-family: 'Source Sans Pro', sans-serif;
+	grid-row: 2/ span 1;
+	grid-column: 1/5;
+	text-align: center;
+	margin-top: 65%;
+}
 }
 
 @media only screen and (min-width: 600px) {
@@ -119,6 +193,8 @@ main {
 	z-index: 1;
 	background-color: #B8DBD9;
 	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
 }
 
 #coming_soon {
@@ -131,7 +207,7 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	background-color: #F4F4F9;
-	margin-top: 80vh;
+	margin-top: 100vh;
 }
 
 .footerLogo {
@@ -182,6 +258,74 @@ footer {
 	font-size: 12px;
 	margin-left: -3%;
 }
+
+.puppypaws {
+	width: 100%;
+}
+
+.ppawsPic {
+	grid-column: 2/4;
+	grid-row: 1 / span 1;
+	margin-top: 20%;
+}
+
+.ppawsTitle, .ppawsTitle a:hover {
+	grid-column: 4/6;
+	grid-row: 1/ span 1;
+	margin-top: 40%;
+	margin-left: 15%;	
+	font-family: 'Source Sans Pro', sans-serif;	
+	text-decoration: none;
+	color: #04724D;
+}
+
+.ppaws {
+	color: #000000;
+}
+
+.ppawsFramework {
+	grid-column: 4/6;
+	grid-row: 1/ span 1;
+	margin-left: 15%;
+	margin-top: 60%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 90%;
+}
+
+.bootstrapAct {
+	width: 100%;
+}
+
+.bootstrapAda {
+	grid-column: 3/6;
+	grid-row: 2/ span 1;
+	/*margin-top: -40%;*/
+}
+
+.bootstrap, .bootstrap a:hover {
+	grid-row: 2/ span 1;
+	grid-column: 2/3;
+	/*margin-top: 20%;*/
+	text-decoration: none;
+	color: #04724D;
+	font-size: 10%;
+
+}
+
+.bootstrapTitle {
+	color: #000000;
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+.bootstrapTxt {
+	font-family: 'Source Sans Pro', sans-serif;
+	grid-row: 2/ span 1;
+	grid-column: 2/3;
+	margin-top: 60%;
+	padding-right: 10%;
+	font-size: 90%;
+}
 }
 
 @media only screen and (min-width:  992px) {
@@ -207,7 +351,9 @@ main {
 	z-index: 1;
 	margin-top: -25px;
 	background-color: #B8DBD9;
-	height: 100%;
+	height: 150%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
 }
 
 #coming_soon {
@@ -216,11 +362,11 @@ main {
 
 footer {
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	background-color: #F4F4F9;
-	margin-top: 80vh;
+	margin-top: 145vh;
 }
 
 .footerLogo {
@@ -271,6 +417,71 @@ footer {
 	margin-top: -10%;
 	font-size: 15px;
 	margin-left: 10%;
+}
+
+.puppypaws {
+	width: 100%;
+}
+
+.ppawsPic {
+	grid-column: 2/4;
+	grid-row: 1 / span 1;
+	margin-top: 20%;
+}
+
+.ppawsTitle, .ppawsTitle a:hover {
+	grid-column: 4/5;
+	grid-row: 1/ span 1;
+	margin-top: 110%;
+	margin-left: 20%;	
+	font-family: 'Source Sans Pro', sans-serif;	
+	text-decoration: none;
+	color: #04724D;
+}
+
+.ppaws {
+	color: #000000;
+}
+
+.ppawsFramework {
+	grid-column: 4/6;
+	grid-row: 1/ span 1;
+	margin-left: 10%;
+	margin-top: 70%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 110%;
+}
+
+.bootstrapAct {
+	width: 100%;
+}
+
+.bootstrapAda {
+	grid-column: 3/6;
+	grid-row: 2/ span 1;
+}
+
+.bootstrap, .bootstrap a:hover {
+	grid-row: 2/ span 1;
+	grid-column: 2/3;
+	margin-top: 25%;
+	text-decoration: none;
+	color: #04724D;
+}
+
+.bootstrapTitle {
+	color: #000000;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.bootstrapTxt {
+	font-family: 'Source Sans Pro', sans-serif;
+	grid-row: 2/ span 1;
+	grid-column: 2/3;
+	padding-right: 10%;
+	padding-top: 5%;
+	font-size: 110%;
 }
 }
 
