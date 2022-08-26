@@ -249,7 +249,7 @@ main {
 	grid-template-columns: repeat(6, 1fr);
 }
 
-.formDiv {
+/*.formDiv {
 	grid-column: 2/5;
 }
 #form {
@@ -265,6 +265,14 @@ main {
 	height: 50px;
 	border: none;
 	border-radius: 50px;
+}*/
+
+form {
+	background-color: #000000;
+}
+
+input {
+	display: block;
 }
 
 footer {
