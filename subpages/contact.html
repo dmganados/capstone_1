@@ -46,7 +46,13 @@
 	<main class="container-fluid">
 		<!-- Contact Form -->
 		<div class="formDiv">
-			<form action="https://formsubmit.co/dmganados@gmail.com" method="POST" class="offset-4" id="form">
+			<form action="https://formsubmit.co/dmganados@gmail.com" method="POST">
+				<input type="hidden" name="_subject" value="New Email!">
+				<input type="email" name="email" placeholder="Email Address" required>
+			    <input type="text" name="message" placeholder="Your Message" required>			
+			    <button type="submit">Send</button>
+			</form>
+			<!-- <form action="https://formsubmit.co/dmganados@gmail.com" method="POST" class="offset-4" id="form">
 				<div class="form-group">
 					<label class="text-light" for="name">Name</label>
 					<input type="text" class="form-control" id="name" placeholder="Your Name" required>
@@ -56,10 +62,10 @@
 					<label class="text-light" for="email">Email address</label>
 					<input type="email" class="form-control" id="email" placeholder="name@example.com" required>
 				</div>
-				<!-- <div class="form-group">
+				<div class="form-group">
 					<label class="text-light" for="contact">Contact Number</label>
 					<input type="number" class="form-control" id="contact" placeholder="+63 900 000 0000">
-				</div> -->
+				</div>
 				<div class="form-group">
 					<label class="text-light" for="contactmessage">Message</label>
 					<textarea class="form-control" id="contactmessage" rows="3" required></textarea>
@@ -67,7 +73,7 @@
 
 				<button type="submit" class="message_button">Submit</button>
 				<button type="reset" class="message_button">Reset</button>
-			</form>
+			</form> -->
 		</div>
 	</main>
 	<footer>
