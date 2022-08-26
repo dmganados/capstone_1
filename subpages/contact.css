@@ -249,30 +249,40 @@ main {
 	grid-template-columns: repeat(6, 1fr);
 }
 
-/*.formDiv {
-	grid-column: 2/5;
+.formDiv {
+	grid-column: 3/5;
 }
-#form {
-	background-color: #000000;
-	padding: 50px;
-	margin-top: 50px;
-	margin-bottom: 20px;
-}
-
-.message_button {
-	background-color: #04724D;
-	width: 90px;
-	height: 50px;
-	border: none;
-	border-radius: 50px;
-}*/
 
 form {
 	background-color: #000000;
+	width: 100%;
+	padding: 2% 10% 5% 12%;
+	margin-top: 20%;
 }
 
 input {
 	display: block;
+	width: 100%;
+}
+
+p {
+	color: #F4F4F9;
+	margin-top: 10%;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+}
+
+button {
+	display: block;
+	background-color: #04724D;
+	width: 50%;
+	border-radius: 50px;
+	padding: 10px;
+	margin-top: 5%;
+	margin-left: 25%;
 }
 
 footer {
