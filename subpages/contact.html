@@ -7,8 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="contact.css">
-	<title>About Me | My Portfolio</title>
-	<title>Contact Me | My Portfolio</title>
+	<title>Contact | My Portfolio</title>
 </head>
 <body>
 
@@ -34,7 +33,7 @@
 					<a class="nav-link" href="./aboutme.html">About Me</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./contact.html">Contact Me</a>
+					<a class="nav-link" href="./contact.html">Contact</a>
 				</li>
 
 			</ul>
@@ -47,23 +46,23 @@
 	<main class="container-fluid">
 		<!-- Contact Form -->
 		<div class="formDiv">
-			<form class="offset-4" id="form">
+			<form action="https://formsubmit.co/dmganados@gmail.com" method="POST" class="offset-4" id="form">
 				<div class="form-group">
 					<label class="text-light" for="name">Name</label>
-					<input type="text" class="form-control" id="name" placeholder="Your Name">
+					<input type="text" class="form-control" id="name" placeholder="Your Name" required>
 				</div>
 
 				<div class="form-group">
 					<label class="text-light" for="email">Email address</label>
-					<input type="email" class="form-control" id="email" placeholder="name@example.com">
+					<input type="email" class="form-control" id="email" placeholder="name@example.com" required>
 				</div>
-				<div class="form-group">
+				<!-- <div class="form-group">
 					<label class="text-light" for="contact">Contact Number</label>
-					<input type="text" class="form-control" id="contact" placeholder="+63 900 000 0000">
-				</div>
+					<input type="number" class="form-control" id="contact" placeholder="+63 900 000 0000">
+				</div> -->
 				<div class="form-group">
 					<label class="text-light" for="contactmessage">Message</label>
-					<textarea class="form-control" id="contactmessage" rows="3"></textarea>
+					<textarea class="form-control" id="contactmessage" rows="3" required></textarea>
 				</div>
 
 				<button type="submit" class="message_button">Submit</button>
@@ -92,6 +91,22 @@
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>	
+	<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendEmail(){
+			Email.send({
+			    Host : "smtp.gmail.com",
+			    Username : "dmganados@gmail.com",
+			    Password : "Lerrud@G0205",
+			    To : "dmganados@gmail.com",
+			    From : "dmganados@gmail.com",
+			    Subject : "Inquiry from Portfolio",
+			    Body : "And this is the body"
+			}).then(
+			  message => alert(message)
+			);
+		}
+	</script> -->
 </body>
 </html>
